@@ -1,0 +1,24 @@
+{
+  "name": "florida-panthers-gameday-tests",
+  "version": "1.0.0",
+  "description": "Playwright automation suite for Florida Panthers Gameday mobile app",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:auth": "npx playwright test tests/auth.spec.ts",
+    "test:tickets": "npx playwright test tests/tickets.spec.ts",
+    "test:scores": "npx playwright test tests/live-scores.spec.ts",
+    "test:food": "npx playwright test tests/food-ordering.spec.ts",
+    "test:nav": "npx playwright test tests/arena-navigation.spec.ts",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:ui": "npx playwright test --grep @ui",
+    "test:edge": "npx playwright test --grep @edge",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "lint": "eslint tests/**/*.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
