@@ -1,7 +1,7 @@
 {
-  "name": "florida-FanApp-gameday-tests",
+  "name": "FanAppQA-FanApp-gameday-tests",
   "version": "1.0.0",
-  "description": "Playwright automation suite for Florida FanApp Gameday mobile app",
+  "description": "Playwright automation suite forFanAppQA Gameday mobile app",
   "scripts": {
     "test": "npx playwright test",
     "test:auth": "npx playwright test tests/auth.spec.ts",

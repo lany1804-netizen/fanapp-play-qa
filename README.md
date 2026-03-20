@@ -1,6 +1,6 @@
-# 🏒 Florida FanApp Gameday App — Playwright Test Suite
+# 🏒FanAppQA — Playwright Test Suite
 
-Automated end-to-end tests for the Florida FanApp Gameday mobile app (iOS & Android), built with [Playwright](https://playwright.dev/).
+Automated end-to-end tests for theFanAppQA Gameday mobile app (iOS & Android), built with [Playwright](https://playwright.dev/).
 
 ---
 
@@ -59,7 +59,7 @@ npx playwright install
 Create a `.env` file in the project root:
 
 ```env
-BASE_URL=https://gameday-staging.floridaFanApp.com
+BASE_URL=https://gameday-staging.FanAppQAFanApp.com
 ```
 
 ---

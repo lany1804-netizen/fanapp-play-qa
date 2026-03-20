@@ -1,5 +1,5 @@
 /**
- * Test fixtures & constants for Florida FanApp Gameday App tests.
+ * Test fixtures & constants forFanAppQA tests.
  * Update values here to match your staging/test environment.
  */
 
