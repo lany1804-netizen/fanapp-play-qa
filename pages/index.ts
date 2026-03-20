@@ -46,7 +46,7 @@ export class LoginPage {
     const bg = await this.loginButton.evaluate((el) =>
       window.getComputedStyle(el).backgroundColor
     );
-    // Florida Panthers red ~rgb(178, 34, 34)
+    // Florida FanApp red ~rgb(178, 34, 34)
     expect(bg).toMatch(/178|B22222/i);
   }
 }

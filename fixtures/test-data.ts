@@ -1,12 +1,12 @@
 /**
- * Test fixtures & constants for Florida Panthers Gameday App tests.
+ * Test fixtures & constants for Florida FanApp Gameday App tests.
  * Update values here to match your staging/test environment.
  */
 
 export const TEST_USERS = {
   valid: {
-    email: 'qa_tester@panthers-test.com',
-    password: 'Test@Panthers2024!',
+    email: 'qa_tester@FanApp-test.com',
+    password: 'Test@FanApp2024!',
     displayName: 'QA Tester',
   },
   invalid: {
@@ -14,17 +14,17 @@ export const TEST_USERS = {
     password: 'WrongPassword123',
   },
   specialChars: {
-    email: 'qa_special@panthers-test.com',
+    email: 'qa_special@FanApp-test.com',
     password: 'P@$$w0rd!#%^&*()',
   },
   biometric: {
-    email: 'qa_biometric@panthers-test.com',
+    email: 'qa_biometric@FanApp-test.com',
     password: 'Biometric@Test1!',
   },
 };
 
 export const PROMO_CODES = {
-  valid: 'PANTHERS10',
+  valid: 'FanApp10',
   expired: 'EXPIRED2022',
   invalid: 'FAKECODE999',
 };

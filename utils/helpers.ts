@@ -2,7 +2,7 @@ import { Page, expect } from '@playwright/test';
 import { SELECTORS, TEST_USERS } from '../fixtures/test-data';
 
 /**
- * Shared utility helpers for Panthers Gameday test suite.
+ * Shared utility helpers for FanApp Gameday test suite.
  */
 
 // ─── Auth Helpers ────────────────────────────────────────────────────────────

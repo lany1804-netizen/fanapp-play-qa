@@ -50,7 +50,7 @@ test.describe('Live Scores & Game Updates', () => {
   });
 
   // ─── SCR-03: Goal push notification ─────────────────────────────────────────
-  test('SCR-03 | Goal push notification sent within 15s of Panthers goal', async ({ page, context }) => {
+  test('SCR-03 | Goal push notification sent within 15s of FanApp goal', async ({ page, context }) => {
     // Grant notification permission
     await context.grantPermissions(['notifications']);
     await page.goto('/settings/notifications');
@@ -59,15 +59,15 @@ test.describe('Live Scores & Game Updates', () => {
     // Background the app (navigate away)
     await page.goto('/home');
 
-    // Simulate Panthers goal
+    // Simulate FanApp goal
     await page.evaluate(() => {
-      window.dispatchEvent(new CustomEvent('ws:panthers-goal', { detail: { period: '2', time: '10:23' } }));
+      window.dispatchEvent(new CustomEvent('ws:FanApp-goal', { detail: { period: '2', time: '10:23' } }));
     });
 
     // Check notification was dispatched (app-level mock)
     await expect(async () => {
       const notifSent = await page.evaluate(() =>
-        (window as any).__lastNotification?.title?.includes('Panthers') ?? false
+        (window as any).__lastNotification?.title?.includes('FanApp') ?? false
       );
       expect(notifSent).toBe(true);
     }).toPass({ timeout: TIMEOUTS.pushNotification });
@@ -223,7 +223,7 @@ test.describe('Live Scores & Game Updates', () => {
 
     // Trigger a goal
     await page.evaluate(() => {
-      window.dispatchEvent(new CustomEvent('ws:panthers-goal', { detail: { period: '3', time: '5:00' } }));
+      window.dispatchEvent(new CustomEvent('ws:FanApp-goal', { detail: { period: '3', time: '5:00' } }));
     });
 
     await page.waitForTimeout(3000);

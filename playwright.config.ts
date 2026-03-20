@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 /**
- * Florida Panthers Gameday App — Playwright Configuration
+ * Florida FanApp Gameday App — Playwright Configuration
  * Targets iOS (Safari) and Android (Chrome) mobile emulation.
  */
 export default defineConfig({
@@ -20,7 +20,7 @@ export default defineConfig({
   ],
 
   use: {
-    baseURL: process.env.BASE_URL || 'https://gameday.floridapanthers.com',
+    baseURL: process.env.BASE_URL || 'https://gameday.floridaFanApp.com',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'on-first-retry',

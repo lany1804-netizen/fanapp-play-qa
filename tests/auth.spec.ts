@@ -53,7 +53,7 @@ test.describe('Login / Authentication', () => {
   });
 
   // ─── AUTH-05: iOS button UI ─────────────────────────────────────────────────
-  test('AUTH-05 @ui | Login button renders with Panthers branding on iOS', async ({ page }) => {
+  test('AUTH-05 @ui | Login button renders with FanApp branding on iOS', async ({ page }) => {
     // Run on iPhone projects only
     test.skip(
       !page.context().browser()?.browserType().name().includes('webkit'),

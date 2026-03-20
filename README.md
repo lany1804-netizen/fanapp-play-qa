@@ -1,13 +1,13 @@
-# 🏒 Florida Panthers Gameday App — Playwright Test Suite
+# 🏒 Florida FanApp Gameday App — Playwright Test Suite
 
-Automated end-to-end tests for the Florida Panthers Gameday mobile app (iOS & Android), built with [Playwright](https://playwright.dev/).
+Automated end-to-end tests for the Florida FanApp Gameday mobile app (iOS & Android), built with [Playwright](https://playwright.dev/).
 
 ---
 
 ## 📁 Project Structure
 
 ```
-panthers-playwright/
+FanApp-playwright/
 ├── tests/
 │   ├── auth.spec.ts              # AUTH-01 to AUTH-14: Login & Authentication
 │   ├── tickets.spec.ts           # TKT-01 to TKT-14: Ticketing & Seat Selection
@@ -59,7 +59,7 @@ npx playwright install
 Create a `.env` file in the project root:
 
 ```env
-BASE_URL=https://gameday-staging.floridapanthers.com
+BASE_URL=https://gameday-staging.floridaFanApp.com
 ```
 
 ---
@@ -200,6 +200,6 @@ jobs:
 
 | Role             | Contact                |
 |------------------|------------------------|
-| QA Lead          | qa-lead@panthers.com   |
-| Dev Contact      | dev-team@panthers.com  |
+| QA Lead          | qa-lead@FanApp.com   |
+| Dev Contact      | dev-team@FanApp.com  |
 | Playwright Docs  | https://playwright.dev |
