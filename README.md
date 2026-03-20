@@ -1,6 +1,6 @@
-# 🎯FanApp-Play-QA-Mobile App Playwright Test Suite
+# 🎯FanApp-Play-QA - Mobile App Playwright Test Suite
 
-Automated end-to-end tests for theFanApp-Play-QA mobile app (iOS & Android), built with [Playwright](https://playwright.dev/).
+Automated end-to-end tests for mobile fan applications (iOS & Android), built with [Playwright](https://playwright.dev/).
 
 ---
 
