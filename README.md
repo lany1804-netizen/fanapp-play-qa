@@ -1,4 +1,4 @@
-# 🏒FanAppQA — Playwright Test Suite
+# 🎯FanAppQA — Playwright Test Suite
 
 Automated end-to-end tests for theFanAppQA Gameday mobile app (iOS & Android), built with [Playwright](https://playwright.dev/).
 
